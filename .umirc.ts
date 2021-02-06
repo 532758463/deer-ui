@@ -1,5 +1,3 @@
-import { join } from "path";
-
 export default {
   mode: "site",
   title: "deer-ui",
