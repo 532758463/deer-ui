@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
       "deer-ui": ["src/index.ts"],
       "deer-ui/es/*": ["src/*"]
@@ -15,5 +15,5 @@
     "lib": ["dom", "es2017"],
     "skipLibCheck": true
   },
-  "exclude": ["node_modules", "lib", "es"]
+  "exclude": ["node_modules", "lib", "es", "esm", "tests", "gulpfile.ts"]
 }

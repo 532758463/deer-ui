@@ -1,3 +1,5 @@
+import { join } from "path";
+
 export default {
   mode: "site",
   title: "deer-ui",
@@ -21,6 +23,9 @@ export default {
     baseNavigator: true,
   },
   hash: true,
+  base: "/deer-ui/",
+  publicPath: "/deer-ui/",
+  styles: [`body { color: red; }`],
   extraBabelPlugins: [
     [
       "import",

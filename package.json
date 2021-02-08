@@ -30,7 +30,11 @@
     "start": "dumi dev",
     "site": "dumi build",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
-    "build": "lessc index.less index.css -x",
+    "build:less": "lessc src/style/index.less lib/index.css es/index.css -x",
+    "build:es": "tsc --project tsconfig.build.json --module esnext --outDir es",
+    "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
+    "prebuild": "rimraf es lib",
+    "build-all":"cross-env NODE_ENV=production && npm run prebuild && npm run build:es && npm run build:lib && gulp",
     "docs:build": "dumi build",
     "docs-dev:build": "UMI_ENV=dev dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
@@ -43,7 +47,9 @@
   "peerDependencies": {
     "antd": ">=4.0.0",
     "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+    "react-dom": ">=16.9.0",
+    "mobx":">=4",
+    "mobx-react-lite":">=3.0.0"
   },
   "dependencies": {
     "@ant-design/icons": "^4.2.2",
@@ -74,11 +80,19 @@
     "lint-staged": "^10.2.0",
     "git-cz": "^4.7.6",
     "stylelint": "^13.0.0",
+    "mobx":"^6.1.5",
+    "mobx-react-lite":"^3.2.0",
     "stylelint-config-prettier": "^8.0.0",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.1.0",
-    "stylelint-order": "^4.0.0"
+    "stylelint-order": "^4.0.0",
+    "rimraf":"^3.0.2",
+    "cross-env": "^7.0.2",
+    "gulp":"^4.0.2",
+    "gulp-less": "^4.0.1",
+    "less-plugin-autoprefix":"^2.0.0",
+    "ts-node": "^8.9.1"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
