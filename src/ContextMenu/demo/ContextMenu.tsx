@@ -1,14 +1,14 @@
 import React, { FunctionComponent, useContext } from "react";
-import { Menu } from "antd";
-import { ContextMenuContext } from "./ContextMenuProvider";
+import { Menu, message } from "antd";
+import { ContextMenuContext } from "../ContextMenuProvider";
 import classnames from "classnames";
-
+import { IDataSource } from "deer-ui/es/common/types";
 interface IContextMenuProps {
-  selectedKeys: Set<unknown>;
+  dataSource: IDataSource<any>;
 }
 
 export const ContextMenu: FunctionComponent<IContextMenuProps> = ({
-  selectedKeys,
+  dataSource,
 }) => {
   const dataContextMenu = useContext(ContextMenuContext);
 
@@ -16,21 +16,19 @@ export const ContextMenu: FunctionComponent<IContextMenuProps> = ({
     dataContextMenu.onVisibleChange(false);
   };
 
-  const favorite = () => {};
+  const favorite = () => {
+    message.success("收藏成功");
+  };
 
   return (
     <>
-      {!(selectedKeys.size > 1) ? (
-        <Menu
-          className={classnames("as-search-contextmenu")}
-          onClick={menuClick}
-        >
-          <Menu.Item hidden={selectedKeys.size > 1} onClick={favorite}>
-            移动
-          </Menu.Item>
-          <Menu.Item>删除</Menu.Item>
-        </Menu>
-      ) : null}
+      <Menu className={classnames("contextmenu")} onClick={menuClick}>
+        <Menu.Item hidden={dataSource.selectedKeys.size > 1}>移动</Menu.Item>
+        <Menu.Item>删除</Menu.Item>
+        {dataSource.selectedKeys.size === 1 && (
+          <Menu.Item onClick={favorite}>收藏</Menu.Item>
+        )}
+      </Menu>
     </>
   );
 };

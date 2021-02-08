@@ -24,7 +24,7 @@ export interface IButtonProps extends Omit<ButtonProps, "type"> {
  *按钮用于开始一个即时操作。
  *
  * ```js
- *  import { Button } from "@aishu/young-ui"
+ *  import { Button } from "deer-ui"
  * ```
  */
 export const Button = forwardRef<HTMLElement, IButtonProps>((props, ref) => {

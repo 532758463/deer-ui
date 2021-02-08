@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import { Avatar } from "antd";
 import { DataList } from "../DataList";
 import { useSelect } from "../../common";
+import "../style/index.less";
 
 import head from "./img/head.jpg";
 const data = [];
@@ -9,7 +10,7 @@ const data = [];
 for (let i = 0; i < 20; i++) {
   data.push({
     key: `gns//${i}`,
-    title: `deer-ui Title ${i}`,
+    title: `deer-ui title ${i}`,
   });
 }
 
@@ -20,7 +21,7 @@ const DataListDemo: FunctionComponent = () => {
       {({ item }) => (
         <>
           <Avatar src={head} />
-          <span>{item.title}</span>
+          <span style={{ marginLeft: "20px" }}>{item.title}</span>
         </>
       )}
     </DataList>
