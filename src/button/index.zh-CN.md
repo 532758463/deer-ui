@@ -13,7 +13,7 @@ group:
 
 ```tsx
 import React from "react";
-import { Button } from "deer-ui";
+import { Button } from "@dawn/deer-ui";
 
 export default () => <Button type="primary">primary</Button>;
 ```

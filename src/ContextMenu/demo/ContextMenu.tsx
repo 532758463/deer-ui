@@ -2,7 +2,7 @@ import React, { FunctionComponent, useContext } from "react";
 import { Menu, message } from "antd";
 import { ContextMenuContext } from "../ContextMenuProvider";
 import classnames from "classnames";
-import { IDataSource } from "deer-ui/es/common/types";
+import { IDataSource } from "@dawn/deer-ui/es/common/types";
 interface IContextMenuProps {
   dataSource: IDataSource<any>;
 }

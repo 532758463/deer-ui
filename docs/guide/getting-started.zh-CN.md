@@ -13,10 +13,10 @@ nav:
 
 ```
 // yarn
-yarn add deer-ui
+yarn add @dawn/deer-ui
 
 // npm
-npm install -D deer-ui
+npm install -D @dawn/deer-ui
 ```
 
 ## 使用
