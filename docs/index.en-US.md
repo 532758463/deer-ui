@@ -23,6 +23,6 @@ footer: xiaoyang | Copyright © 2020-present
 
 ```
 # 安装依赖
-$ yarn add @dawn/deer-ui
+$ yarn add @tonice/deer-ui
 
 ```

@@ -2,9 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@dawn/deer-ui": ["src/index.ts"],
-      "@dawn/deer-ui/es/*": ["src/*"],
-      "@dawn/deer-ui/lib/*": ["src/*"]
+      "@tonice/deer-ui": ["src/index.ts"],
+      "@tonice/deer-ui/es/*": ["src/*"],
+      "@tonice/deer-ui/lib/*": ["src/*"]
     },
     "moduleResolution": "node",
     "esModuleInterop": true,

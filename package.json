@@ -1,5 +1,5 @@
 {
-  "name": "@dawn/deer-ui",
+  "name": "@tonice/deer-ui",
   "version": "0.0.1",
   "license": "MIT",
   "description": "基于 ant-design 封装的偏业务组件",

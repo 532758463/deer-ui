@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { Avatar } from "antd";
-import { DataList } from "@dawn/deer-ui";
+import { DataList } from "@tonice/deer-ui";
 import { useSelect } from "../../common";
 import "../style/index.less";
 
