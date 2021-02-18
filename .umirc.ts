@@ -4,8 +4,9 @@ export default {
   mode: "site",
   title: "deer-ui",
   favicon:
-    "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
-  logo: "https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg",
+    "https://raw.githubusercontent.com/532758463/deer-ui/bd730a198d4acc4c5a76cb788b54655a2907b6d3/static/logo.svg",
+  logo:
+    "https://raw.githubusercontent.com/532758463/deer-ui/bd730a198d4acc4c5a76cb788b54655a2907b6d3/static/logo.svg",
   navs: {
     "zh-CN": [
       null,
