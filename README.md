@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://raw.githubusercontent.com/532758463/deer-ui/bd730a198d4acc4c5a76cb788b54655a2907b6d3/static/logo.svg">
+    <img width="200" src="https://raw.githubusercontent.com/532758463/deer-ui/bd730a198d4acc4c5a76cb788b54655a2907b6d3/static/logo.svg">
+  </a>
+</p>
+
 # deer-ui
 
 deer-ui 是一款集成 antd 组件得轻量级 ui 库

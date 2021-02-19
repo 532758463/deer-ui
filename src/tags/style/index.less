@@ -1,0 +1,123 @@
+.deer-ui-category-item {
+  width: 100%;
+  display: flex;
+  border-top: 1px dashed #bbb;
+  padding: 15px 0 15px 8px;
+  position: relative;
+
+  &:first-child {
+    border-top: 1px dashed #ffffff;
+  }
+
+  &:last-child {
+    border-bottom: 1px dashed #bbb;
+  }
+
+  &.tags-multiple + .deer-ui-category-item {
+    border-top: 1px dashed #ffffff;
+  }
+
+  &.tags-multiple {
+    border: 1px solid#779eea;
+    .tag-box {
+      width: calc(~"100% - 100px - 160px");
+    }
+  }
+
+  .title {
+    margin-right: 12px;
+    min-width: 85px;
+
+    .separator {
+      display: inline-block;
+      width: 2px;
+      height: 15px;
+      position: relative;
+      top: 3px;
+      margin-right: 8px;
+    }
+  }
+
+  .tag-box {
+    max-width: calc(~"100% - 100px - 160px");
+    height: 30px;
+    line-height: 32px;
+    overflow: hidden;
+
+    &.expand {
+      overflow: unset;
+      height: auto;
+    }
+
+    .tag {
+      height: 24px;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 4px;
+      color: #505050;
+      background: #fafafa;
+      border: 1px solid rgba(211, 212, 219, 0.8);
+
+      &:hover {
+        color: #547ee8;
+        background: rgba(84, 126, 232, 0.04);
+        border: 1px solid rgba(84, 126, 232, 0.4);
+      }
+
+      &.selected {
+        color: #547ee8;
+        background: rgba(84, 126, 232, 0.12);
+        border: 1px solid rgba(84, 126, 232, 0.12);
+      }
+
+      .count {
+        padding-left: 8px;
+        color: rgba(52, 97, 236, 0.8);
+      }
+    }
+
+    .multiple-btn {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+
+  .operation {
+    display: flex;
+    position: absolute;
+    right: 0;
+    width: 160px;
+    justify-content: flex-end;
+
+    div {
+      width: 58px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:hover {
+        background: rgba(229, 228, 233, 0.8);
+      }
+    }
+
+    .more {
+      margin-right: 8px;
+
+      .icon-down {
+        font-size: 8px;
+        color: rgba(0, 0, 0, 0.55);
+        margin-left: 5px;
+        position: relative;
+        top: -2px;
+
+        &.revert {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}

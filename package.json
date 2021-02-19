@@ -57,6 +57,7 @@
     "@pansy/react-watermark": "2.1.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.20",
+    "react-use": "^17.1.1",
     "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
