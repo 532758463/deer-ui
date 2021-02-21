@@ -24,5 +24,18 @@ footer: xiaoyang | Copyright © 2020-present
 ```
 # 安装依赖
 $ yarn add @tonice/deer-ui
+```
 
+引入样式
+
+css
+
+```
+import "@tonice/deer-ui/index.css"
+```
+
+less
+
+```
+import "@tonice/deer-ui/style/index.less"
 ```

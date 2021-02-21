@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useContext } from "react";
 import { Menu, message } from "antd";
-import { ContextMenuContext } from "../ContextMenuProvider";
+import { ContextMenuContext } from "@tonice/deer-ui";
 import classnames from "classnames";
 import { IDataSource } from "@tonice/deer-ui/es/common/types";
 interface IContextMenuProps {

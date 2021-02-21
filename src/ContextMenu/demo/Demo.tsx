@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { ContextMenu } from "./ContextMenu";
-import { ContextMenuProvider } from "../ContextMenuProvider";
-import { DataList } from "@tonice/deer-ui";
-import { useSelect } from "@tonice/deer-ui/es/common";
+import { ContextMenuProvider, DataList, useSelect } from "@tonice/deer-ui";
+import {} from "@tonice/deer-ui";
+// import { useSelect } from "@tonice/deer-ui/es/common";
 import { Avatar } from "antd";
 import head from "./img/head.jpg";
 import "./demo.less";

@@ -5,6 +5,8 @@ export { Button };
 
 export * from "./DataList";
 
+export * from "./ContextMenu";
+
 export * from "./tags";
 
 export * from "./common";

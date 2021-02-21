@@ -11,17 +11,14 @@ nav:
 
 ## 安装
 
-```
 // yarn
+
+```
 yarn add @tonice/deer-ui
+```
 
 // npm
+
+```
 npm install -D @tonice/deer-ui
-```
-
-## 使用
-
-```
-
-
 ```

@@ -4,14 +4,14 @@
 
 ## 请查看规范説明
 
-- [提交信息规范](/docs/commit-lint)
+- [提交信息规范](/guide/commit-lint)
 
 ## 开发流程
 
 1. clone deer-ui 的代码到本地
 
 ```
-
+git clone git@github.com:532758463/deer-ui.git
 ```
 
 2. 安装项目依赖，推荐使用 yarn
@@ -20,10 +20,10 @@
 yarn
 ```
 
-3. 使用 yarn 安装每个 package 下的依赖
+3. build 编译项目
 
 ```
-yarn bootstarp
+yarn build-all
 
 ```
 
