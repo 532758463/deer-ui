@@ -10,3 +10,5 @@ export * from "./ContextMenu";
 export * from "./tags";
 
 export * from "./common";
+
+export * from "./watermark";
