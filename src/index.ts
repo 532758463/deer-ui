@@ -12,3 +12,5 @@ export * from "./tags";
 export * from "./common";
 
 export * from "./watermark";
+
+export * from "./TextHide";
