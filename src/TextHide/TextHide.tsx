@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { textHide } from "@tonice/deer-ui";
+import { textHide } from "../common";
 
 interface ITextProps
   extends React.DetailedHTMLProps<

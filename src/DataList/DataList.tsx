@@ -3,7 +3,10 @@ import { useObserver } from "mobx-react-lite";
 import { List } from "antd";
 import classnames from "classnames";
 import { DataSelectItem } from "./DataSelectItem";
-import { IDataSelectItemComponentProps, IDataSource } from "../common/types";
+import {
+  IDataSelectItemComponentProps,
+  IDataSource,
+} from "../common/hooks/types";
 
 interface IDataListProps<T> {
   children: ComponentType<IDataSelectItemComponentProps<T>>;

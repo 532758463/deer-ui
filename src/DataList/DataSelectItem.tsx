@@ -2,7 +2,7 @@ import React, { FunctionComponent, createElement, ComponentType } from "react";
 import { useObserver } from "mobx-react-lite";
 import { List } from "antd";
 import classnames from "classnames";
-import { IDataSelectItemComponentProps } from "../common/types";
+import { IDataSelectItemComponentProps } from "../common/hooks/types";
 
 interface IDataSelectItemProps<T> {
   itemRenderer: ComponentType<IDataSelectItemComponentProps<T>>;
